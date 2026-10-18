@@ -183,3 +183,255 @@ footer{
     }
 
 }
+
+
+/* Navbar logo link */
+.logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* View All Projects alignment */
+.projects-more {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* =====================================
+   SHARED STYLING FOR INNER PAGES
+===================================== */
+
+.subpage-section {
+    min-height: 65vh;
+    padding: 80px 8%;
+}
+
+.subpage-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.subpage-heading h1 {
+    font-size: 38px;
+    color: #f8fafc;
+    margin-bottom: 12px;
+}
+
+.subpage-heading p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+.subpage-section .section-title {
+    margin-bottom: 15px;
+}
+
+/* =====================================
+   ABOUT PAGE
+===================================== */
+
+.about-page-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 35px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about-page-content p {
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.about-page-content h3 {
+    color: #38bdf8;
+    font-size: 22px;
+    margin: 25px 0 15px;
+}
+
+.about-page-content .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.about-page-content .skills span {
+    display: inline-block;
+    padding: 9px 16px;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: #7dd3fc;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.about-page-content .skills span:hover {
+    border-color: #38bdf8;
+    transform: translateY(-3px);
+}
+
+/* =====================================
+   EDUCATION PAGE
+===================================== */
+
+.education-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    gap: 25px;
+}
+
+.education-page .card {
+    position: relative;
+    padding: 28px 30px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-left: 4px solid #38bdf8;
+    border-radius: 12px;
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.education-page .card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.education-page .card h3 {
+    color: #f8fafc;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.education-page .card p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin: 5px 0;
+}
+
+.education-page .education-year {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 5px 12px;
+    background: #0f172a;
+    color: #38bdf8;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+/* =====================================
+   CONTACT PAGE
+===================================== */
+
+.contact-page .contact-box {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 35px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.contact-page .contact-box p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 16px 0;
+    margin: 0;
+    border-bottom: 1px solid #334155;
+    color: #cbd5e1;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.contact-page .contact-box p:last-child {
+    border-bottom: none;
+}
+
+.contact-page .contact-box strong {
+    color: #38bdf8;
+}
+
+.contact-page .contact-box a {
+    color: #38bdf8;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: color 0.3s ease;
+}
+
+.contact-page .contact-box a:hover {
+    color: #7dd3fc;
+    text-decoration: underline;
+}
+
+/* =====================================
+   INNER PAGE NAVIGATION
+===================================== */
+
+.subpage-back {
+    display: block;
+    width: fit-content;
+    margin: 35px auto 0;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.subpage-back:hover {
+    color: #7dd3fc;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 768px) {
+    .subpage-section {
+        padding: 60px 6%;
+    }
+
+    .subpage-heading h1 {
+        font-size: 30px;
+    }
+
+    .about-page-content,
+    .contact-page .contact-box {
+        padding: 24px;
+    }
+
+    .education-page .card {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .subpage-section {
+        padding: 45px 5%;
+    }
+
+    .subpage-heading h1 {
+        font-size: 26px;
+    }
+
+    .about-page-content,
+    .contact-page .contact-box {
+        padding: 18px;
+    }
+
+    .education-page .card h3 {
+        font-size: 18px;
+    }
+}
